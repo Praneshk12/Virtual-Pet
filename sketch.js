@@ -46,17 +46,18 @@ function draw() {
     lastFed = data.val();
   })
   
-  //write code to display text lastFed time here
   fill(255,255,244);
+
+  //write code to display text lastFed time here
   textSize(15);
   if(lastFed >= 12){
-    text("Last Feed: "+lastFed %12+ "PM",350, 30);
+    text("Last Fed: "+lastFed %12+ "PM",330, 30);
   }
   else if(lastFed === 0){
-    text("Last Fed: 12 AM",350,30);
+    text("Last Fed: 12 AM",330,30);
   }
   else {
-    text("Last Fed:"+ lastFed + "AM", 350,30);
+    text("Last Fed:"+ lastFed + "AM", 330,30);
   }
  
   drawSprites();
